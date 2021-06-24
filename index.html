@@ -6,21 +6,103 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="styles.css" rel="stylesheet">
   <title>Heroku Test</title>
+  <style>
+    .top {
+      background: #246A73;
+      height: 16.5%;
+      width: 100%;
+      position: fixed;
+      z-index: 3;
+      top: 0;
+      overflow-x: visible;
+    } 
+    .bottom {
+      background: #160F29;
+      color: white;
+      height: 10%;
+      width: 68%;
+      left: 16%;
+      top: 0;
+      position: fixed;
+      z-index: 3;
+      top: 90%;
+      overflow-x: visible;
+    }
+    /* 
+    */
+    .center {
+      background: #DDBEA8;
+      height: 100%;
+      width: 68%;
+      left: 16%;
+      position: fixed;
+      z-index: 2;
+      top: 0;
+      overflow-x: visible;
+    }
+    .side {
+      background: #368F8B;
+      height: 100%;
+      width: 100%;
+      position: fixed;
+      z-index: 1;
+      top: 0;
+      overflow-x: visible;
+    }
+
+
+    .vertical-center {
+      margin: 0;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      /* -ms-transform: translateY(-50%);
+      transform: translateY(-50%); */
+    }
+    html,body {
+      margin:0;
+      padding:0;
+    } 
+    /* 
+    */
+    #intro {
+      font-size: 4vh;
+      color: white;
+      height: 25vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    #link {
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 5;
+    }
+  </style>
 </head>
+
 <body>
-  <div>
-    <nav>
-      <ol>
-            <li class="crumb"><a href="http://gabagool.herokuapp.com/">Home</a></li>
-            <li class="crumb"><a href="./profile.html">Profile</a></li>
-            <li class="crumb"><a href="./about.html">About</a></li>
-        <li class="crumb"><a href="./anotherpage.html">Another Page</a></li>
-        </ol>
-    </nav>
-  </div>
+  <section class="top">
+    <p id="intro">&lt;title&gt; THIS IS MY WEBSITE &lt;/title&gt;</p><br><br>
 
+  </section>
 
-  <p id="intro">&lt;title&gt; THIS IS MY WEBSITE &lt;/title&gt;</p><br><br>
+  <section class="center">
+  </section>
+  
+  <section class="side"></section>
+  <section class="bottom">okay thanks for coming it is terrible
+    <div>
+      <nav id="link">
+        <Button>
+          <a href="http://gabagool.herokuapp.com/">CLICK FOR GABAGOOL</a>
+        </Button>
+      </nav>
+    </div>
+  </section>
+  
   <section id='test'><img src="https://preview.redd.it/261msy19j8f41.jpg?width=640&crop=smart&auto=webp&s=eba6fdf505b5d5ff6e987e93d30c55788e9cbb44" width=auto height=500vh/></section>
 </body>
 </html>
