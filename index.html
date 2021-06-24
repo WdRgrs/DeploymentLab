@@ -28,8 +28,6 @@
       top: 90%;
       overflow-x: visible;
     }
-    /* 
-    */
     .center {
       background: #DDBEA8;
       height: 100%;
@@ -49,6 +47,11 @@
       top: 0;
       overflow-x: visible;
     }
+    /* 
+    */
+    Button {
+
+    }
 
 
     .vertical-center {
@@ -63,12 +66,11 @@
       margin:0;
       padding:0;
     } 
-    /* 
-    */
+    
     #intro {
       font-size: 4vh;
       color: white;
-      height: 25vh;
+      height: 20vh;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -80,29 +82,105 @@
       justify-content: center;
       z-index: 5;
     }
-  </style>
+    #list {
+      color: #DDBEA8;
+      position: relative;
+      top: 50%;
+    }
+    #profileReturn {
+      font-size: 4vh;
+      color: white;
+      height: 50vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    </style>
 </head>
 
 <body>
+  <!-- This is the Header -->
   <section class="top">
+      <section id="asd"></section>
+    <!-- <h2>If w's were years, this website could smoke.</h3> -->
     <p id="intro">&lt;title&gt; THIS IS MY WEBSITE &lt;/title&gt;</p><br><br>
-
   </section>
 
+<!-- This is the Center block, complete with important content??????? -->
   <section class="center">
+    <div id="one">pic</div>
+    <section id='profileReturn'></section>
+    <div id="two"></div>
   </section>
-  
-  <section class="side"></section>
+
+<!-- This is the side/border area -->
+  <section class="side">
+    <ul id="list">
+      <li id="profile">Profile</li>
+      <li>Maybe someday they will be links to other things</li>
+      <li>Like more lists</li>
+    </ul>
+  </section>
+
+<!-- This is the Bottom Seciton with some clicky links -->
   <section class="bottom">okay thanks for coming it is terrible
     <div>
+      <nav id="link">
+        <Button>
+          <a href="https://www.instagram.com/wdrgrs/">CLICK FOR NOT GABAGOOL</a>
+        </Button>
+      </nav>
       <nav id="link">
         <Button>
           <a href="http://gabagool.herokuapp.com/">CLICK FOR GABAGOOL</a>
         </Button>
       </nav>
-    </div>
-  </section>
+    </section>
+  </div>
   
-  <section id='test'><img src="https://preview.redd.it/261msy19j8f41.jpg?width=640&crop=smart&auto=webp&s=eba6fdf505b5d5ff6e987e93d30c55788e9cbb44" width=auto height=500vh/></section>
+  <!-- Start of Functionality -->
+  <script>
+    document.getElementById('profile').onclick = function() { 
+      document.getElementById('profileReturn').innerHTML = '<h1>Wade Rogers...</h1>' + '<h2>Test Test</h2>' + '<h4>TEST TEST TEST</h4>'
+    }  
+  </script>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <!-- <br>
+  
+  <section id="asd"> <br>
+    <button id="boop">asdfasdfsdfasfd</button>
+    <script>
+      document.getElementById("boop").onclick = function () {
+        document.getElementById("asd").innerHTML = '<h2> If Ws were years, this website could smoke. </h2>'
+    </script>
+  </section> -->
+  
+  
+  <!-- <section id='top'></section>
+    
+    
+    <p id="p2">Hello World!</p> -->
+
+  <!-- <script>
+    document.getElementById("top").style.color = "blue";
+  </script> -->
+
+
+
+
 </body>
 </html>
