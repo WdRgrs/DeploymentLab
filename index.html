@@ -49,11 +49,6 @@
     }
     /* 
     */
-    Button {
-
-    }
-
-
     .vertical-center {
       margin: 0;
       position: absolute;
@@ -87,13 +82,28 @@
       position: relative;
       top: 50%;
     }
+    #one{
+      font-size: 4vh;
+      color: white;
+      height: 30vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
     #profileReturn {
       font-size: 4vh;
       color: white;
       height: 50vh;
       display: flex;
+      font-display: normal;
       align-items: center;
       justify-content: center;
+    }
+    li:hover {
+        cursor: grab;
+        font-size: 200%;
+        font-weight: 200%;
+        box-shadow: 10px 10px 10px 10px rgba(0,0,0,0.75);
     }
     </style>
 </head>
@@ -108,7 +118,7 @@
 
 <!-- This is the Center block, complete with important content??????? -->
   <section class="center">
-    <div id="one">pic</div>
+    <div id="one"></div>
     <section id='profileReturn'></section>
     <div id="two"></div>
   </section>
@@ -116,9 +126,9 @@
 <!-- This is the side/border area -->
   <section class="side">
     <ul id="list">
-      <li id="profile">Profile</li>
-      <li>Maybe someday they will be links to other things</li>
-      <li>Like more lists</li>
+      <li id="profile">Profile</li><br>
+      <li id="things">For You</li><br>
+      <li id="picture">Picture</li>
     </ul>
   </section>
 
@@ -141,46 +151,21 @@
   <!-- Start of Functionality -->
   <script>
     document.getElementById('profile').onclick = function() { 
-      document.getElementById('profileReturn').innerHTML = '<h1>Wade Rogers...</h1>' + '<h2>Test Test</h2>' + '<h4>TEST TEST TEST</h4>'
+      document.getElementById('profileReturn').innerHTML = '<h1>Wade Rogers...</h1>' + '<h2>Test Test</h2>' + '<h4>TEST TEST<br> TEST TEST</h4>'
     }  
   </script>
-  
 
-
-
-
-
-
-
-
-
-
-
-
-
-  
-  <!-- <br>
-  
-  <section id="asd"> <br>
-    <button id="boop">asdfasdfsdfasfd</button>
     <script>
-      document.getElementById("boop").onclick = function () {
-        document.getElementById("asd").innerHTML = '<h2> If Ws were years, this website could smoke. </h2>'
+      document.getElementById('things').onclick = function() { 
+        document.getElementById('profileReturn').innerHTML = '<img src="https://media.giphy.com/media/sLeUxBaoMsePeIoLvv/giphy.gif" width=auto height=500vh/>'
+      }  
     </script>
-  </section> -->
-  
-  
-  <!-- <section id='top'></section>
-    
-    
-    <p id="p2">Hello World!</p> -->
 
-  <!-- <script>
-    document.getElementById("top").style.color = "blue";
-  </script> -->
-
-
-
+  <script>
+    document.getElementById('picture').onclick = function() { 
+      document.getElementById('profileReturn').innerHTML = '<img src="http://static.demilked.com/wp-content/uploads/2018/10/5bcd84cbba222-funny-cyanide-and-happiness-explosm-comics-5-5bc9c138e22af__700.jpg" width=auto height=500vh/>'
+    }  
+  </script>
 
 </body>
 </html>
